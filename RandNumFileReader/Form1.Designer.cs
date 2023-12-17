@@ -1,4 +1,4 @@
-﻿namespace RandNumFileReader
+﻿namespace RandNumFileWriter
 {
     partial class randNumWriter
     {

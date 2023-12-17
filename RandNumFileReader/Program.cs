@@ -1,4 +1,4 @@
-namespace RandNumFileReader
+namespace RandNumFileWriter
 {
     internal static class Program
     {

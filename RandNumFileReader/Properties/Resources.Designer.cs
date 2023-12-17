@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RandNumFileReader.Properties {
+namespace RandNumFileWriter.Properties {
     using System;
     
     
