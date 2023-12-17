@@ -2,7 +2,7 @@
 
 namespace RandNumFileReader
 {
-    partial class Form1
+    partial class randNumWriter
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,48 +30,86 @@ namespace RandNumFileReader
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            button1 = new Button();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(randNumWriter));
+            writeToFile = new Button();
+            assignmentDescription = new PictureBox();
+            readFromFile = new Button();
+            outputLabel = new Label();
+            outputListBox = new ListBox();
+            ((System.ComponentModel.ISupportInitialize)assignmentDescription).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // writeToFile
             // 
-            button1.Location = new Point(484, 644);
-            button1.Name = "button1";
-            button1.Size = new Size(172, 66);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            writeToFile.Location = new Point(273, 671);
+            writeToFile.Name = "writeToFile";
+            writeToFile.Size = new Size(172, 66);
+            writeToFile.TabIndex = 0;
+            writeToFile.Text = "Write To File";
+            writeToFile.UseVisualStyleBackColor = true;
+            writeToFile.Click += writeToFile_Click;
             // 
-            // pictureBox1
+            // assignmentDescription
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(191, 111);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(925, 444);
-            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            assignmentDescription.Image = (Image)resources.GetObject("assignmentDescription.Image");
+            assignmentDescription.Location = new Point(191, 111);
+            assignmentDescription.Name = "assignmentDescription";
+            assignmentDescription.Size = new Size(925, 444);
+            assignmentDescription.SizeMode = PictureBoxSizeMode.AutoSize;
+            assignmentDescription.TabIndex = 1;
+            assignmentDescription.TabStop = false;
             // 
-            // Form1
+            // readFromFile
+            // 
+            readFromFile.Location = new Point(944, 601);
+            readFromFile.Name = "readFromFile";
+            readFromFile.Size = new Size(172, 66);
+            readFromFile.TabIndex = 2;
+            readFromFile.Text = "Read From File";
+            readFromFile.UseVisualStyleBackColor = true;
+            readFromFile.Click += readFromFile_Click;
+            // 
+            // outputLabel
+            // 
+            outputLabel.BorderStyle = BorderStyle.FixedSingle;
+            outputLabel.Location = new Point(570, 673);
+            outputLabel.Name = "outputLabel";
+            outputLabel.Size = new Size(203, 193);
+            outputLabel.TabIndex = 3;
+            outputLabel.Click += outputLabel_Click;
+            // 
+            // outputListBox
+            // 
+            outputListBox.FormattingEnabled = true;
+            outputListBox.ItemHeight = 30;
+            outputListBox.Location = new Point(21, 577);
+            outputListBox.Name = "outputListBox";
+            outputListBox.Size = new Size(228, 244);
+            outputListBox.TabIndex = 4;
+            // 
+            // randNumWriter
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1227, 913);
-            Controls.Add(pictureBox1);
-            Controls.Add(button1);
-            Name = "Form1";
-            Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Controls.Add(outputListBox);
+            Controls.Add(outputLabel);
+            Controls.Add(readFromFile);
+            Controls.Add(assignmentDescription);
+            Controls.Add(writeToFile);
+            Name = "randNumWriter";
+            Text = "Random Number Writer";
+            ((System.ComponentModel.ISupportInitialize)assignmentDescription).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
-        private PictureBox pictureBox1;
+        private Button writeToFile;
+        private PictureBox assignmentDescription;
+        private Button readFromFile;
+        private Label outputLabel;
+        private ListBox outputListBox;
     }
 }
