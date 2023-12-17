@@ -1,4 +1,4 @@
-namespace RandNumFileReader
+namespace RandNumFileWriter
 {
     public partial class randNumWriter : Form
     {
