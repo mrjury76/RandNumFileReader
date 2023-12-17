@@ -1,4 +1,4 @@
-using System.IO;
+using System;
 
 namespace RandNumFileReader
 {
@@ -9,6 +9,7 @@ namespace RandNumFileReader
             InitializeComponent();
         }
 
+        private Random random = new Random();
         private void writeToFile_Click(object sender, EventArgs e)
         {
             StreamWriter outputFile = File.CreateText(@"C:\\Users\\mrjur\\OneDrive\\School\\Comp2211-C#\\RandNumFileReader\\randNums.txt");
@@ -27,7 +28,13 @@ namespace RandNumFileReader
             {
                 outputListBox.Items.Add(inputFile.Read());
             }
-               inputFile.Close();
+            inputFile.Close();
+        }
+
+        private void generateRandomNumber()
+        {
+            int randomNumber = random.Next(); // generates a random number
+            Console.WriteLine(randomNumber); // prints the random number to the console
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -44,5 +51,7 @@ namespace RandNumFileReader
         {
 
         }
+
+
     }
 }

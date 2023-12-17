@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace RandNumFileReader
+﻿namespace RandNumFileReader
 {
     partial class randNumWriter
     {
