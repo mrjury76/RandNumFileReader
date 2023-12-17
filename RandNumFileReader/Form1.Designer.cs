@@ -32,10 +32,12 @@
             writeToFile = new Button();
             assignmentDescription = new PictureBox();
             readFromFile = new Button();
-            outputLabel = new Label();
             outputListBox = new ListBox();
             inputTextBox = new TextBox();
             inputPrompt = new Label();
+            listBoxCounter = new Button();
+            listBoxCount = new Label();
+            clearListBox = new Button();
             ((System.ComponentModel.ISupportInitialize)assignmentDescription).BeginInit();
             SuspendLayout();
             // 
@@ -61,21 +63,13 @@
             // 
             // readFromFile
             // 
-            readFromFile.Location = new Point(944, 601);
+            readFromFile.Location = new Point(767, 601);
             readFromFile.Name = "readFromFile";
             readFromFile.Size = new Size(172, 66);
             readFromFile.TabIndex = 2;
             readFromFile.Text = "Read From File";
             readFromFile.UseVisualStyleBackColor = true;
             readFromFile.Click += readFromFile_Click;
-            // 
-            // outputLabel
-            // 
-            outputLabel.BorderStyle = BorderStyle.FixedSingle;
-            outputLabel.Location = new Point(301, 673);
-            outputLabel.Name = "outputLabel";
-            outputLabel.Size = new Size(203, 193);
-            outputLabel.TabIndex = 3;
             // 
             // outputListBox
             // 
@@ -102,15 +96,45 @@
             inputPrompt.TabIndex = 6;
             inputPrompt.Text = "Please enter how many random numbers the file will hold";
             // 
+            // listBoxCounter
+            // 
+            listBoxCounter.Location = new Point(767, 746);
+            listBoxCounter.Name = "listBoxCounter";
+            listBoxCounter.Size = new Size(162, 43);
+            listBoxCounter.TabIndex = 7;
+            listBoxCounter.Text = "Count List Box";
+            listBoxCounter.UseVisualStyleBackColor = true;
+            listBoxCounter.Click += testListBox_Click;
+            // 
+            // listBoxCount
+            // 
+            listBoxCount.BorderStyle = BorderStyle.FixedSingle;
+            listBoxCount.Location = new Point(74, 498);
+            listBoxCount.Name = "listBoxCount";
+            listBoxCount.Size = new Size(119, 52);
+            listBoxCount.TabIndex = 8;
+            // 
+            // clearListBox
+            // 
+            clearListBox.Location = new Point(564, 745);
+            clearListBox.Name = "clearListBox";
+            clearListBox.Size = new Size(131, 40);
+            clearListBox.TabIndex = 9;
+            clearListBox.Text = "Clear";
+            clearListBox.UseVisualStyleBackColor = true;
+            clearListBox.Click += clearListBox_Click;
+            // 
             // randNumWriter
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1227, 913);
+            Controls.Add(clearListBox);
+            Controls.Add(listBoxCount);
+            Controls.Add(listBoxCounter);
             Controls.Add(inputPrompt);
             Controls.Add(inputTextBox);
             Controls.Add(outputListBox);
-            Controls.Add(outputLabel);
             Controls.Add(readFromFile);
             Controls.Add(assignmentDescription);
             Controls.Add(writeToFile);
@@ -119,7 +143,6 @@
             ((System.ComponentModel.ISupportInitialize)assignmentDescription).EndInit();
             ResumeLayout(false);
             PerformLayout();
-
         }
 
         #endregion
@@ -127,9 +150,11 @@
         private Button writeToFile;
         private PictureBox assignmentDescription;
         private Button readFromFile;
-        private Label outputLabel;
         private ListBox outputListBox;
         private TextBox inputTextBox;
         private Label inputPrompt;
+        private Button listBoxCounter;
+        private Label listBoxCount;
+        private Button clearListBox;
     }
 }
