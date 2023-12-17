@@ -34,12 +34,14 @@
             readFromFile = new Button();
             outputLabel = new Label();
             outputListBox = new ListBox();
+            inputTextBox = new TextBox();
+            inputPrompt = new Label();
             ((System.ComponentModel.ISupportInitialize)assignmentDescription).BeginInit();
             SuspendLayout();
             // 
             // writeToFile
             // 
-            writeToFile.Location = new Point(273, 671);
+            writeToFile.Location = new Point(528, 601);
             writeToFile.Name = "writeToFile";
             writeToFile.Size = new Size(172, 66);
             writeToFile.TabIndex = 0;
@@ -50,7 +52,7 @@
             // assignmentDescription
             // 
             assignmentDescription.Image = (Image)resources.GetObject("assignmentDescription.Image");
-            assignmentDescription.Location = new Point(191, 111);
+            assignmentDescription.Location = new Point(36, 12);
             assignmentDescription.Name = "assignmentDescription";
             assignmentDescription.Size = new Size(925, 444);
             assignmentDescription.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -70,11 +72,10 @@
             // outputLabel
             // 
             outputLabel.BorderStyle = BorderStyle.FixedSingle;
-            outputLabel.Location = new Point(570, 673);
+            outputLabel.Location = new Point(301, 673);
             outputLabel.Name = "outputLabel";
             outputLabel.Size = new Size(203, 193);
             outputLabel.TabIndex = 3;
-            outputLabel.Click += outputLabel_Click;
             // 
             // outputListBox
             // 
@@ -85,11 +86,29 @@
             outputListBox.Size = new Size(228, 244);
             outputListBox.TabIndex = 4;
             // 
+            // inputTextBox
+            // 
+            inputTextBox.Location = new Point(528, 537);
+            inputTextBox.Name = "inputTextBox";
+            inputTextBox.Size = new Size(175, 35);
+            inputTextBox.TabIndex = 5;
+            // 
+            // inputPrompt
+            // 
+            inputPrompt.AutoSize = true;
+            inputPrompt.Location = new Point(351, 483);
+            inputPrompt.Name = "inputPrompt";
+            inputPrompt.Size = new Size(546, 30);
+            inputPrompt.TabIndex = 6;
+            inputPrompt.Text = "Please enter how many random numbers the file will hold";
+            // 
             // randNumWriter
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1227, 913);
+            Controls.Add(inputPrompt);
+            Controls.Add(inputTextBox);
             Controls.Add(outputListBox);
             Controls.Add(outputLabel);
             Controls.Add(readFromFile);
@@ -100,6 +119,7 @@
             ((System.ComponentModel.ISupportInitialize)assignmentDescription).EndInit();
             ResumeLayout(false);
             PerformLayout();
+
         }
 
         #endregion
@@ -109,5 +129,7 @@
         private Button readFromFile;
         private Label outputLabel;
         private ListBox outputListBox;
+        private TextBox inputTextBox;
+        private Label inputPrompt;
     }
 }
