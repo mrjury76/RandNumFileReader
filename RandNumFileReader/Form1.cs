@@ -1,3 +1,5 @@
+using System.IO;
+
 namespace RandNumFileReader
 {
     public partial class Form1 : Form
@@ -6,5 +8,6 @@ namespace RandNumFileReader
         {
             InitializeComponent();
         }
+
     }
 }
