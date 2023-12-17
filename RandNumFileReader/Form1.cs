@@ -49,7 +49,7 @@ namespace RandNumFileReader
             inputFile.Close();  // closes the file
         }
 
-        private void testListBox_Click(object sender, EventArgs e)
+        private void listBoxCounter_Click(object sender, EventArgs e)
         {
             listBoxCount.Text = outputListBox.Items.Count.ToString();   // displays the number of items in the list box
         }

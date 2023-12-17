@@ -104,7 +104,7 @@
             listBoxCounter.TabIndex = 7;
             listBoxCounter.Text = "Count List Box";
             listBoxCounter.UseVisualStyleBackColor = true;
-            listBoxCounter.Click += testListBox_Click;
+            listBoxCounter.Click += listBoxCounter_Click;
             // 
             // listBoxCount
             // 
