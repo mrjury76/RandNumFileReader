@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             writeToFile = new Button();
-            readFromFile = new Button();
             inputTextBox = new TextBox();
             inputPrompt = new Label();
             clearListBox = new Button();
@@ -37,26 +36,17 @@
             // 
             // writeToFile
             // 
-            writeToFile.Location = new Point(239, 150);
+            writeToFile.Location = new Point(203, 147);
             writeToFile.Name = "writeToFile";
-            writeToFile.Size = new Size(172, 66);
+            writeToFile.Size = new Size(175, 66);
             writeToFile.TabIndex = 0;
             writeToFile.Text = "Write To File";
             writeToFile.UseVisualStyleBackColor = true;
             writeToFile.Click += writeToFile_Click;
             // 
-            // readFromFile
-            // 
-            readFromFile.Location = new Point(-7, 103);
-            readFromFile.Name = "readFromFile";
-            readFromFile.Size = new Size(172, 66);
-            readFromFile.TabIndex = 2;
-            readFromFile.Text = "Read From File";
-            readFromFile.UseVisualStyleBackColor = true;
-            // 
             // inputTextBox
             // 
-            inputTextBox.Location = new Point(236, 74);
+            inputTextBox.Location = new Point(203, 78);
             inputTextBox.Name = "inputTextBox";
             inputTextBox.Size = new Size(175, 35);
             inputTextBox.TabIndex = 5;
@@ -64,7 +54,7 @@
             // inputPrompt
             // 
             inputPrompt.AutoSize = true;
-            inputPrompt.Location = new Point(54, 28);
+            inputPrompt.Location = new Point(12, 25);
             inputPrompt.Name = "inputPrompt";
             inputPrompt.Size = new Size(546, 30);
             inputPrompt.TabIndex = 6;
@@ -72,9 +62,9 @@
             // 
             // clearListBox
             // 
-            clearListBox.Location = new Point(261, 251);
+            clearListBox.Location = new Point(238, 240);
             clearListBox.Name = "clearListBox";
-            clearListBox.Size = new Size(131, 40);
+            clearListBox.Size = new Size(110, 39);
             clearListBox.TabIndex = 9;
             clearListBox.Text = "Clear";
             clearListBox.UseVisualStyleBackColor = true;
@@ -84,11 +74,10 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(676, 386);
+            ClientSize = new Size(597, 310);
             Controls.Add(clearListBox);
             Controls.Add(inputPrompt);
             Controls.Add(inputTextBox);
-            Controls.Add(readFromFile);
             Controls.Add(writeToFile);
             Name = "randNumWriter";
             Text = "Random Number Writer";
@@ -99,7 +88,6 @@
         #endregion
 
         private Button writeToFile;
-        private Button readFromFile;
         private TextBox inputTextBox;
         private Label inputPrompt;
         private Button clearListBox;
