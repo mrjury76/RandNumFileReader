@@ -8,7 +8,7 @@ namespace RandNumFileWriter
         }
 
         private Random rand = new Random();  // creates a Random object
-        
+
         private int generateRandomNumber()  // generates a random number between 1 and 100
         {
             int randomNumber = rand.Next(1, 101);
@@ -50,24 +50,5 @@ namespace RandNumFileWriter
         {
             inputTextBox.Clear();
         }
-
-        //private void readFromFile_Click(object sender, EventArgs e)  // reads the file and displays the contents
-        //{
-        //    StreamReader inputFile = File.OpenText(@"C:\\Users\\mrjur\\OneDrive\\School\\Comp2211-C#\\RandNumFileReader\\randNums.txt");
-        //    //outputLabel.Text = inputFile.ReadToEnd();  // reads the file
-        //    while (!inputFile.EndOfStream)
-        //        outputListBox.Items.Add(inputFile.ReadLine());  // adds the contents of the file to the list box
-        //    inputFile.Close();  // closes the file
-        //}
-
-        //private void listBoxCounter_Click(object sender, EventArgs e)
-        //{
-        //    listBoxCount.Text = outputListBox.Items.Count.ToString();   // displays the number of items in the list box
-        //}
-
-        //private void clearListBox_Click(object sender, EventArgs e)
-        //{
-        //    outputListBox.Items.Clear();  // clears the list box
-        //}
     }
 }

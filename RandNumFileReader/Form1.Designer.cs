@@ -54,7 +54,7 @@
             // inputPrompt
             // 
             inputPrompt.AutoSize = true;
-            inputPrompt.Location = new Point(12, 25);
+            inputPrompt.Location = new Point(24, 21);
             inputPrompt.Name = "inputPrompt";
             inputPrompt.Size = new Size(546, 30);
             inputPrompt.TabIndex = 6;
